@@ -14,10 +14,19 @@ In order for my program to adhere to its non-functional requirements it must mee
 
 ## Phase 2 - Researching & Planning
 ### Research
+*What’s already available on the topic? Find news articles, journal articles, or interview students / teachers (if local issue) to get a sense of what people think of the topic. Make sure to include any links / interviews / surveys in your Markdown / Jupyter documentation.*
 ### Findings
+*Discuss the above information in at least one SEEL / SEEC Paragraph.*
 ### Data
-#### Survey: https://forms.gle/78fqpbPkFroJuN8u7
 ### Planning
+#### Survey: https://forms.gle/78fqpbPkFroJuN8u7
+#### Data Dictionary
+| Field | Data Type | Format | Description | Example | Validtion |
+| - | - | - | - | - | - |
+| Extra Curriculars | str | XX...XX | Voluntary, non-academic pursuits undertaken by students outside of regular school curriculum | Scouts;Swimming;Other | Any string, excluding numbers |
+| Extra Curricular Hours / Week | int64 | N | Number of hours taking part in Extracurricular Activities | 0 | Single digit (0-9)
+| School Opinion | int64 | N | Opinion on school overall, excluding breaktime | 6 | Single digit (0-9)
+| Breaktime Opinion | int64 | N | Opinion on breaktime overall, including recess, lunch, before and after school, and free periods.  | 7 | Single digit (0-9)
 ## Phase 3 - Producing & Implementing
 
 ## Phase 4 - Testing & Evaluating
