@@ -17,28 +17,28 @@ Goal: To access and interact with existing data through the program’s user int
 
 Preconditions:
 
-The dataset has already been preloaded into the system by an administrator / programmer.
+The dataset has already been preloaded into the system by an myself.
 
-The user has access to the system interface.
+The user has access to the system.
 
 Main Flow:
 
-User opens the program and is presented with a text-based menu.
+After launching the program, a text menu appears for the user to choose from
 
-User selects one of the following options:
+Using the text menu User selects one of the following options:
 a. View visualisation (e.g., chart or graph of selected data)
 b. Search or filter data based on specific criteria
-c. Update a data entry (e.g., change a value or correct an error)
+c. Veiw mean data
+d. Update data
+e. Quit
 
-System performs the requested action and outputs to user.
+The system carries out the selected action and displays the result to the user.
 
 Postconditions:
 
-User has viewed and/or interacted with the data.
+The system saves all valid updates
 
-Any valid updates are saved by the system.
-
-Data remains available for further queries or analysis.
+Information remains available for additional searching or review
 ## Phase 2 - Researching & Planning
 ### Research
 *What’s already available on the topic? Find news articles, journal articles, or interview students / teachers (if local issue) to get a sense of what people think of the topic. Make sure to include any links / interviews / surveys in your Markdown / Jupyter documentation.*
