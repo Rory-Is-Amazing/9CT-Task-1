@@ -1,3 +1,7 @@
+import os, time
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 
 def menu():
@@ -24,6 +28,8 @@ def menu():
             break
         else:
             print("Invalid selection. Please choose a number between 1 and 5.")
+    time.sleep(2)
+    clear_screen()
 
 if __name__ == "__main__":
     menu()
