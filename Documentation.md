@@ -25,11 +25,11 @@ Main Flow:
 
 After launching the program, a text menu appears for the user to choose from
 
-Using the text menu User selects one of the following options:
-a. View visualisation (e.g., chart or graph of selected data)
-b. Search or filter data based on specific criteria
-c. Veiw mean data
-d. Update data
+Using the text menu User selects one of the following options: 
+a. View visualisation (e.g., chart or graph of selected data) 
+b. Search or filter data based on specific criteria 
+c. Veiw mean data 
+d. Update data 
 e. Quit
 
 The system carries out the selected action and displays the result to the user.
@@ -41,7 +41,9 @@ The system saves all valid updates
 Information remains available for additional searching or review
 ## Phase 2 - Researching & Planning
 ### Research
-*What’s already available on the topic? Find news articles, journal articles, or interview students / teachers (if local issue) to get a sense of what people think of the topic. Make sure to include any links / interviews / surveys in your Markdown / Jupyter documentation.*
+Data or information available on my topic is very limited, and if their is any of it it's not easy processed down into usable data. This made it so I was required to make a survey, which although more work allowed me to pinpoint the specific information I need. 
+
+*Talk about survey*
 ### Findings
 *Discuss the above information in at least one SEEL / SEEC Paragraph.*
 ### Data
