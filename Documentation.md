@@ -11,7 +11,34 @@ In order for my program to meet its functional goal it must adhere to a set of r
 In order for my program to adhere to its non-functional requirements it must meet 2 main goals, usability and reliability. For usability my program will need a helpful and informative README, which outlines; installation instructions, required Libraries, how to run the program, example usage, and a troubleshooting section. The program itself must also have an intuitive menu, it isn’t required to have a graphical user interface, but an easy to use text based interface. For reliability, the program must be able to validate all user interfaces, prevent data corruption, provide clear error messages when any process or input fails, and make sure no change to the data occurs without user confirmation.
 
 #### Use Case
+Actor: User
 
+Goal: To access and interact with existing data through the program’s user interface.
+
+Preconditions:
+
+The dataset has already been preloaded into the system by an myself.
+
+The user has access to the system.
+
+Main Flow:
+
+After launching the program, a text menu appears for the user to choose from
+
+Using the text menu User selects one of the following options:
+a. View visualisation (e.g., chart or graph of selected data)
+b. Search or filter data based on specific criteria
+c. Veiw mean data
+d. Update data
+e. Quit
+
+The system carries out the selected action and displays the result to the user.
+
+Postconditions:
+
+The system saves all valid updates
+
+Information remains available for additional searching or review
 ## Phase 2 - Researching & Planning
 ### Research
 *What’s already available on the topic? Find news articles, journal articles, or interview students / teachers (if local issue) to get a sense of what people think of the topic. Make sure to include any links / interviews / surveys in your Markdown / Jupyter documentation.*
