@@ -1,8 +1,8 @@
 import os, time
-
+import matplotlib.pyplot as plt
 import pandas as pd
 
-from Data_Module import total_data, clear_screen
+from Data_Module import total_data, clear_screen, visualise_data
 
 def menu():
     while True:
@@ -13,8 +13,7 @@ def menu():
         if option == 1:
             total_data()
         elif option == 2:
-            #visualise_data()
-            pass
+            visualise_data()
         elif option == 3:
             #search_data()
             pass

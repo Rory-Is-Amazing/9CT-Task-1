@@ -57,7 +57,7 @@ Data or information available on my topic is very limited, and if their is any o
 | School Opinion | int64 | N | Opinion on school overall, excluding breaktime | 6 | Single digit (0-9)
 | Breaktime Opinion | int64 | N | Opinion on breaktime overall, including recess, lunch, before and after school, and free periods.  | 7 | Single digit (0-9)
 ## Phase 3 - Producing & Implementing
-
+- Be able to sort collums 
 ## Phase 4 - Testing & Evaluating
 ### Test
 ### Analysis
