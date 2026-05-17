@@ -1,29 +1,25 @@
 import os, time
 import pandas as pd
 
-from Data_Module import total_data, clear_screen, visualise_data
+from Data_Module import clear_screen, total_data, compare_data, visualise_data, search_data, mean_data
 
 def menu():
     while True:
-        print('╔══════════════════════════════════╗ \n║           Data Science           ║\n╠══════════════════════════════════╣\n║ 1 > Veiw Data                    ║\n║ 2 > Veiw Visualisation           ║\n║ 3 > Search/Filter Data           ║\n║ 4 > Veiw Mean Data               ║\n║ 5 > Update data                  ║\n║ 6 > Quit                         ║\n╠══════════════════════════════════╣\n║  Enter Option (1-6) to continue  ║\n╚══════════════════════════════════╝')
+        print('╔══════════════════════════════════╗ \n║           Data Science           ║\n╠══════════════════════════════════╣\n║ 1 > Veiw Data                    ║\n║ 2 > Compare Fields           ║\n║ 3 > Visualise Data           ║\n║ 4 > Search/Filter Data               ║\n║ 5 > Veiw Mean Data                  ║\n║ 6 > Quit                         ║\n╠══════════════════════════════════╣\n║  Enter Option (1-6) to continue  ║\n╚══════════════════════════════════╝')
 
         option = int(input("Input:"))
 
         if option == 1:
             total_data()
         elif option == 2:
-            visualise_data()
+            compare_data()
         elif option == 3:
-            #search_data()
-            pass
+            visualise_data()
         elif option == 4:
-            #mean_data()
-            pass
+            search_data()
         elif option == 5:
-            #update_data()
-            pass
+            mean_data()
         elif option == 6:
-            #save_changes()
             print("Quiting Program...")
             break
         else:

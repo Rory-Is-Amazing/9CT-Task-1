@@ -30,10 +30,14 @@ def visualise_data():
 
 def search_data():
     pass
+    # Search data for specific values
+    # Possibly sort data
 
 def mean_data():
     pass
+    # Bring up means for each field
 
-def update_data():
+def compare_data():
     pass
+    # Select prebuilt options for field comparison
 
