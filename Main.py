@@ -16,15 +16,11 @@ def menu():
             visualise_data()
         elif option == 3:
             #search_data()
-            pass
         elif option == 4:
             #mean_data()
-            pass
         elif option == 5:
-            #update_data()
-            pass
+            #compare_data()
         elif option == 6:
-            #save_changes()
             print("Quiting Program...")
             break
         else:
