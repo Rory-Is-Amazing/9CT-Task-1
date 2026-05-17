@@ -1,36 +1,34 @@
 import os, time
 import pandas as pd
 
-def clear_screen():
-    os.system('cls' if os.name == 'nt' else 'clear')
-
+from Data_Module import total_data, clear_screen, visualise_data
 
 def menu():
     while True:
-        print('╔══════════════════════════════════╗ \n║           Data Science           ║\n╠══════════════════════════════════╣\n║ 1 > Veiw Visualisation           ║\n║ 2 > Search/Filter Data           ║\n║ 3 > Veiw Mean Data               ║\n║ 4 > Update data                  ║\n║ 5 > Quit                         ║\n╠══════════════════════════════════╣\n║  Enter Option (1-5) to continue  ║\n╚══════════════════════════════════╝')
+        print('╔══════════════════════════════════╗ \n║           Data Science           ║\n╠══════════════════════════════════╣\n║ 1 > Veiw Data                    ║\n║ 2 > Veiw Visualisation           ║\n║ 3 > Search/Filter Data           ║\n║ 4 > Veiw Mean Data               ║\n║ 5 > Update data                  ║\n║ 6 > Quit                         ║\n╠══════════════════════════════════╣\n║  Enter Option (1-6) to continue  ║\n╚══════════════════════════════════╝')
 
-        option = input()
+        option = int(input("Input:"))
 
-        if option == '1':
-            #visualise_data()
-            pass
-        elif option == '2':
+        if option == 1:
+            total_data()
+        elif option == 2:
+            visualise_data()
+        elif option == 3:
             #search_data()
             pass
-        elif option == '3':
+        elif option == 4:
             #mean_data()
             pass
-        elif option == '4':
+        elif option == 5:
             #update_data()
             pass
-        elif option == '5':
+        elif option == 6:
             #save_changes()
             print("Quiting Program...")
             break
         else:
-            print("Invalid selection. Please choose a number between 1 and 5.")
-    time.sleep(2)
-    clear_screen()
+            print("Invalid selection. Please choose a number between 1 and 6.")
+        clear_screen()
 
 if __name__ == "__main__":
     menu()
