@@ -1,3 +1,5 @@
+import pandas as pd # type: ignore
+
 def visualise_data():
     pass
 
