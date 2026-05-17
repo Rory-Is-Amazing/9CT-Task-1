@@ -1,25 +1,25 @@
 import os, time
 import pandas as pd
-
+import matplotlib.pyplot as plt
 from Data_Module import clear_screen, total_data, compare_data, visualise_data, search_data, mean_data
 
 def menu():
     while True:
-        print('╔══════════════════════════════════╗ \n║           Data Science           ║\n╠══════════════════════════════════╣\n║ 1 > Veiw Data                    ║\n║ 2 > Compare Fields           ║\n║ 3 > Visualise Data           ║\n║ 4 > Search/Filter Data               ║\n║ 5 > Veiw Mean Data                  ║\n║ 6 > Quit                         ║\n╠══════════════════════════════════╣\n║  Enter Option (1-6) to continue  ║\n╚══════════════════════════════════╝')
+        print('╔══════════════════════════════════╗ \n║           Data Science           ║\n╠══════════════════════════════════╣\n║ 1 > Veiw Data                    ║\n║ 2 > Compare Fields               ║\n║ 3 > Visualise Data               ║\n║ 4 > Search/Filter Data           ║\n║ 5 > Veiw Mean Data               ║\n║ 6 > Quit                         ║\n╠══════════════════════════════════╣\n║  Enter Option (1-6) to continue  ║\n╚══════════════════════════════════╝')
 
-        option = int(input("Input:"))
+        option = input("Input:")
 
-        if option == 1:
+        if option == "1":
             total_data()
-        elif option == 2:
+        elif option == "2":
             compare_data()
-        elif option == 3:
+        elif option == "3":
             visualise_data()
-        elif option == 4:
+        elif option == "4":
             search_data()
-        elif option == 5:
+        elif option == "5":
             mean_data()
-        elif option == 6:
+        elif option == "6":
             print("Quiting Program...")
             break
         else:
