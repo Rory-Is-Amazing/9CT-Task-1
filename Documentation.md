@@ -30,7 +30,8 @@ a. View visualisation (e.g., chart or graph of selected data)
 b. Search or filter data based on specific criteria 
 c. Veiw mean data 
 d. Update data 
-e. Quit
+e. Compare Fields
+f. Quit
 
 The system carries out the selected action and displays the result to the user.
 

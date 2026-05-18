@@ -19,7 +19,7 @@ def menu():
             search_data()
         elif option == "5":
             mean_data()
-        elif option == "6":
+        elif option == 6:
             print("Quiting Program...")
             break
         else:
