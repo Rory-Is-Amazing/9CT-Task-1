@@ -7,53 +7,64 @@ def clear_screen():
 
 
 def total_data():
-    
-    # Ask if they would prefere data sorted or unsorted
-    total_df = pd.read_csv('Data Science Project.csv')
-    total_df['How many hours of extracurricular do you take part in a week?'] = \
-        pd.to_numeric(total_df['How many hours of extracurricular do you take part in a week?'], errors='coerce')
-    total_df.sort_values('How many hours of extracurricular do you take part in a week?', inplace=True) # BROOOO Not workin
-    print(total_df)
-    print('')
-    rm = input('Press ENTER to return to menu')
-import pandas as pd
+    clear_screen()
+    print('╔══════════════════════════════════╗\n║         View & Sort Data         ║\n╠══════════════════════════════════╣\n║ 1 > View unsorted data           ║\n║ 2 > View sorted data             ║\n╚══════════════════════════════════╝')
+    optiont = input('Input: ')
+    if optiont == "1":
+        clear_screen()
+        total_df = pd.read_csv('Data Science Project.csv')
+        print(total_df)
+        print('')
+        rm = input('Press ENTER to return to menu')
+        total_data()
+    elif optiont == "2":
+        df = pd.read_csv("Data Science Project.csv")
+        fields = list(df.columns)
+        print("Choose a field to sort by:")
+        print("__________________________")
+        number = 1
+        for field in fields:
+            print(str(number) + ". " + field)
+            number += 1
+        choice = input("\nEnter number: ")
+        if not choice.isdigit():
+            print("Not a number. Showing unsorted data.")
+            print(df)
+            rm = input("Press ENTER to return to menu")
+            total_data()
+        choice_number = int(choice)
+        selected_field = fields[choice_number - 1]
+        df = df.sort_values(selected_field)
+        print(df)
+        rm = input("Press ENTER to return to menu")
+        total_data()
+    else:
+        print("Invalid selection. Please choose a number between 1 and 2.")
+        total_data()
 
-def view_selected_fields(csv_file):
+def compare_data(csv_file):
     clear_screen()
     df = pd.read_csv(csv_file)
-
-
     fields = list(df.columns)
-
-    print("Here are the fields in the table:")
-    print('═════════════════════════════════')
-
-    num = 1
+    print("Choose a field to sort by:")
+    print("══════════════════════════")
+    number = 1
     for field in fields:
-        print(f"{num}. {field}")
-        num += 1
+        print(str(number) + ". " + field)
+        number += 1
+    print("")
+    choice = input("Enter number: ")
+    if not choice.isdigit():
+        print("Invalid input. Showing unsorted data.")
+        return df
+    choice_number = int(choice)
+    if choice_number < 1 or choice_number > len(fields):
+        print("Number out of range. Showing unsorted data.")
+        return df
+    selected_field = fields[choice_number - 1]
+    df = df.sort_values(selected_field)
+    return df
 
-    print()
-    user_input = input("Type the numbers of the fields you want, separated by commas (e.g., 1,3,4): ")
-
-    pieces = user_input.split(",")
-
-    indexes = []
-    for p in pieces:
-        p = p.strip()
-        indexes.append(int(p))
-
-    selected_fields = []
-    for i in indexes:
-        selected_fields.append(fields[i - 1])
-
-    print("\n              Selected Fields:               ")
-    print('═════════════════════════════════════════════')
-    print(df[selected_fields])
-
-    return df[selected_fields]
-
-    return selected
 
 #def compare_data():
     clear_screen()
