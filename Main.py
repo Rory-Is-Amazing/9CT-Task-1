@@ -1,7 +1,7 @@
 import os, time
 import pandas as pd
 import matplotlib.pyplot as plt
-from Data_Module import clear_screen, total_data, compare_data, visualise_data, search_data, mean_data
+from Data_Module import clear_screen, total_data, view_selected_fields, visualise_data, search_data, mean_data
 
 def menu():
     while True:
@@ -12,14 +12,15 @@ def menu():
         if option == "1":
             total_data()
         elif option == "2":
-            compare_data()
+            view_selected_fields("Data Science Project.csv")
+            rm = input('\nPress ENTER to return to menu')
         elif option == "3":
             visualise_data()
         elif option == "4":
             search_data()
         elif option == "5":
             mean_data()
-        elif option == 6:
+        elif option == "6":
             print("Quiting Program...")
             break
         else:
