@@ -67,7 +67,10 @@ def compare_data(csv_file):
         print(df)
         input("\nPress ENTER to return to menu")
         return
-
+    selected=[fields[n-1] for n in nums]
+    df=df[selected]
+    print(df)
+    input("\nPress ENTER to return to menu")
 
 
 
@@ -75,8 +78,8 @@ def compare_data(csv_file):
 def visualise_data():
     clear_screen()
     print('╔════════════════════════════════════════════╗ \n║              Visualise Data                ║\n╠════════════════════════════════════════════╣\n║ 1 > Extracurricular Hours / School Opinion ║\n║ 2 > Extracurricular Hours / Breaak Opinion ║\n║ 3 > School Opinion / Break Opinion         ║\n║ 4 > Return                                 ║\n╠════════════════════════════════════════════╣\n║  Enter Option (1-4) to continue            ║\n╚════════════════════════════════════════════╝')    
-    optionv = int(input('Inupt: '))
-    if optionv == 1:
+    optionv = input('Inupt: ')
+    if optionv == '1':
         print('Close graph to continue')
         total_df = pd.read_csv('Data Science Project.csv')
         total_df['How many hours of extracurricular do you take part in a week?'] = \
@@ -93,7 +96,7 @@ def visualise_data():
                 )
         plt.show()
         visualise_data()
-    elif optionv == 2:
+    elif optionv == '2':
         print('Close graph to continue')
         total_df = pd.read_csv('Data Science Project.csv')
         total_df['How many hours of extracurricular do you take part in a week?'] = \
@@ -110,7 +113,7 @@ def visualise_data():
                 )
         plt.show()
         visualise_data()
-    elif optionv == 3:
+    elif optionv == '3':
         print('Close graph to continue')
         total_df = pd.read_csv('Data Science Project.csv')
         total_df['What is your opinion of breaktime?'] = \
@@ -127,7 +130,7 @@ def visualise_data():
                 )
         plt.show()
         visualise_data()
-    elif optionv == 4:
+    elif optionv == '4':
         pass
     else:
         print("Invalid selection. Please choose a number between 1 and 5.")
