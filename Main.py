@@ -12,8 +12,7 @@ def menu():
         if option == "1":
             total_data()
         elif option == "2":
-            compare_data77("Data Science Project.csv")
-            rm = input('\nPress ENTER to return to menu') #Gives extra line before printing (\n)
+            compare_data("Data Science Project.csv")
         elif option == "3":
             visualise_data()
         elif option == "4":
