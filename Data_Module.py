@@ -142,5 +142,133 @@ def search_data():
     # Possibly sort data
 
 def mean_data():
-    pass
-    # Bring up means for each field
+    clear_screen()
+    print('╔════════════════════════════════════════════╗ \n║               Fields to Analyse               ║\n╠════════════════════════════════════════════╣\n║ 1 > How many hours of extracurricular do you take part in a week? ║\n║ 2 > What is your opinion of school? ║\n║ 3 > What is your opinion of breatime?         ║\n║ 4 > Return                                 ║\n╠════════════════════════════════════════════╣\n║  Enter Option (1-4) to continue            ║\n╚════════════════════════════════════════════╝')    
+    data_t = input('Inupt: ')
+    print('╔════════════════════════════════════════════╗ \n║               Descriptive Statistics               ║\n╠════════════════════════════════════════════╣\n║ 1 > Mean ║\n║ 2 > Mode ║\n║ 3 > Max ║\n║ 4 > Min ║\n║ 5 > Range ║\n║ 6 > Return ║\n╠════════════════════════════════════════════╣\n║  Enter Option (1-6) to continue            ║\n╚════════════════════════════════════════════╝')    
+    optionm = input('Inupt: ')
+    if optionm == '1':
+        if data_t == '1':
+            total_df = pd.read_csv('Data Science Project.csv')
+            mean_value = total_df['How many hours of extracurricular do you take part in a week?'].mean()
+            print(f'Mean: {mean_value}')
+            input('Press ENTER to return to menu')
+            mean_data()
+        elif data_t == '2':
+            total_df = pd.read_csv('Data Science Project.csv')
+            mean_value = total_df['What is your opinion of school?'].mean()
+            print(f'Mean: {mean_value}')
+            input('Press ENTER to return to menu')
+            mean_data()
+        elif data_t == '3':
+            total_df = pd.read_csv('Data Science Project.csv')
+            mean_value = total_df['What is your opinion of breaktime?'].mean()
+            print(f'Mean: {mean_value}')
+            input('Press ENTER to return to menu')
+            mean_data()
+        elif data_t == '4':
+            pass
+        else:
+            print("Invalid selection. Please choose a number between 1 and 4.")
+            mean_data()
+    elif optionm == '2':
+        if data_t == '1':
+            total_df = pd.read_csv('Data Science Project.csv')
+            mode_value = total_df['How many hours of extracurricular do you take part in a week?'].mode()[0]
+            print(f'Mode: {mode_value}')
+            input('Press ENTER to return to menu')
+            mean_data()
+        elif data_t == '2':
+            total_df = pd.read_csv('Data Science Project.csv')
+            mode_value = total_df['What is your opinion of school?'].mode()[0]
+            print(f'Mode: {mode_value}')
+            input('Press ENTER to return to menu')
+            mean_data()
+        elif data_t == '3':
+            total_df = pd.read_csv('Data Science Project.csv')
+            mode_value = total_df['What is your opinion of breaktime?'].mode()[0]
+            print(f'Mode: {mode_value}')
+            input('Press ENTER to return to menu')
+            mean_data()
+        elif data_t == '4':
+            pass
+        else:
+            print("Invalid selection. Please choose a number between 1 and 4.")
+            mean_data()
+    elif optionm == '3':
+        if data_t == '1':
+            total_df = pd.read_csv('Data Science Project.csv')
+            max_value = total_df['How many hours of extracurricular do you take part in a week?'].max()
+            print(f'Max: {max_value}')
+            input('Press ENTER to return to menu')
+            mean_data()
+        elif data_t == '2':
+            total_df = pd.read_csv('Data Science Project.csv')
+            max_value = total_df['What is your opinion of school?'].max()
+            print(f'Max: {max_value}')
+            input('Press ENTER to return to menu')
+            mean_data()
+        elif data_t == '3':
+            total_df = pd.read_csv('Data Science Project.csv')
+            max_value = total_df['What is your opinion of breaktime?'].max()
+            print(f'Max: {max_value}')
+            input('Press ENTER to return to menu')
+            mean_data()
+        elif data_t == '4':
+            pass
+        else:
+            print("Invalid selection. Please choose a number between 1 and 4.")
+            mean_data()
+    elif optionm == '4':
+        if data_t == '1':
+            total_df = pd.read_csv('Data Science Project.csv')
+            min_value = total_df['How many hours of extracurricular do you take part in a week?'].min()
+            print(f'Min: {min_value}')
+            input('Press ENTER to return to menu')
+            mean_data()
+        elif data_t == '2':
+            total_df = pd.read_csv('Data Science Project.csv')
+            min_value = total_df['What is your opinion of school?'].min()
+            print(f'Min: {min_value}')
+            input('Press ENTER to return to menu')
+            mean_data()
+        elif data_t == '3':
+            total_df = pd.read_csv('Data Science Project.csv')
+            min_value = total_df['What is your opinion of breaktime?'].min()
+            print(f'Min: {min_value}')
+            input('Press ENTER to return to menu')
+            mean_data()
+        elif data_t == '4':
+            pass
+        else:
+            print("Invalid selection. Please choose a number between 1 and 4.")
+            mean_data()
+    elif optionm == '5':
+        if data_t == '1':
+            total_df = pd.read_csv('Data Science Project.csv')
+            range_value = total_df['How many hours of extracurricular do you take part in a week?'].max() - total_df['How many hours of extracurricular do you take part in a week?'].min()
+            print(f'Range: {range_value}')
+            input('Press ENTER to return to menu')
+            mean_data()
+        elif data_t == '2':
+            total_df = pd.read_csv('Data Science Project.csv')
+            range_value = total_df['What is your opinion of school?'].max() - total_df['What is your opinion of school?'].min()
+            print(f'Range: {range_value}')
+            input('Press ENTER to return to menu')
+            mean_data()
+        elif data_t == '3':
+            total_df = pd.read_csv('Data Science Project.csv')
+            range_value = total_df['What is your opinion of breaktime?'].max() - total_df['What is your opinion of breaktime?'].min()
+            print(f'Range: {range_value}')
+            input('Press ENTER to return to menu')
+            mean_data()
+        elif data_t == '4':
+            pass
+        else:
+            print("Invalid selection. Please choose a number between 1 and 4.")
+            mean_data()
+    elif optionm == '6':
+        mean_data()
+    else:
+        print("Invalid selection. Please choose a number between 1 and 6.")
+        mean_data()

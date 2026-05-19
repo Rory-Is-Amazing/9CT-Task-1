@@ -5,7 +5,7 @@ from Data_Module import clear_screen, total_data, compare_data, visualise_data, 
 
 def menu():
     while True:
-        print('╔══════════════════════════════════╗ \n║           Data Science           ║\n╠══════════════════════════════════╣\n║ 1 > View & Sort Data             ║\n║ 2 > Compare Fields               ║\n║ 3 > Visualise Data               ║\n║ 4 > Search/Filter Data           ║\n║ 5 > View Mean Data               ║\n║ 6 > Quit                         ║\n╠══════════════════════════════════╣\n║  Enter Option (1-6) to continue  ║\n╚══════════════════════════════════╝')
+        print('╔══════════════════════════════════╗ \n║           Data Science           ║\n╠══════════════════════════════════╣\n║ 1 > View & Sort Data             ║\n║ 2 > Compare Fields               ║\n║ 3 > Visualise Data               ║\n║ 4 > Search/Filter Data           ║\n║ 5 > View Data Statistics         ║\n║ 6 > Quit                         ║\n╠══════════════════════════════════╣\n║  Enter Option (1-6) to continue  ║\n╚══════════════════════════════════╝')
 
         option = input("Input:")
 
