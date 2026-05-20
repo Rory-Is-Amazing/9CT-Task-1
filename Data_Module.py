@@ -2,6 +2,7 @@ import pandas as pd # type: ignore
 import matplotlib.pyplot as plt
 import os, time
 
+
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -143,10 +144,12 @@ def search_data():
 
 def mean_data():
     clear_screen()
-    print('╔════════════════════════════════════════════╗ \n║               Fields to Analyse               ║\n╠════════════════════════════════════════════╣\n║ 1 > How many hours of extracurricular do you take part in a week? ║\n║ 2 > What is your opinion of school? ║\n║ 3 > What is your opinion of breatime?         ║\n║ 4 > Return                                 ║\n╠════════════════════════════════════════════╣\n║  Enter Option (1-4) to continue            ║\n╚════════════════════════════════════════════╝')    
+    print('╔════════════════════════════════════════════╗ \n║              Fields to Analyse             ║\n╠════════════════════════════════════════════╣\n║ 1 > Extra Curricualar Hours / Week?        ║\n║ 2 > What is your opinion of school?        ║\n║ 3 > What is your opinion of breatime?      ║\n║ Return → Next Section                                ║\n╠════════════════════════════════════════════╣\n║  Enter Option (1-3) to continue            ║\n╚════════════════════════════════════════════╝')    
     data_t = input('Inupt: ')
-    print('╔════════════════════════════════════════════╗ \n║               Descriptive Statistics               ║\n╠════════════════════════════════════════════╣\n║ 1 > Mean ║\n║ 2 > Mode ║\n║ 3 > Max ║\n║ 4 > Min ║\n║ 5 > Range ║\n║ 6 > Return ║\n╠════════════════════════════════════════════╣\n║  Enter Option (1-6) to continue            ║\n╚════════════════════════════════════════════╝')    
+    clear_screen()
+    print('╔════════════════════════════════════════════╗ \n║           Descriptive Statistics           ║\n╠════════════════════════════════════════════╣\n║ 1 > Mean                                   ║\n║ 2 > Mode                                   ║\n║ 3 > Max                                    ║\n║ 4 > Min                                    ║\n║ 5 > Range                                  ║\n║ 6 > Return                                 ║\n╠════════════════════════════════════════════╣\n║  Enter Option (1-6) to continue            ║\n╚════════════════════════════════════════════╝')    
     optionm = input('Inupt: ')
+    clear_screen()
     if optionm == '1':
         if data_t == '1':
             total_df = pd.read_csv('Data Science Project.csv')
@@ -166,8 +169,6 @@ def mean_data():
             print(f'Mean: {mean_value}')
             input('Press ENTER to return to menu')
             mean_data()
-        elif data_t == '4':
-            pass
         else:
             print("Invalid selection. Please choose a number between 1 and 4.")
             mean_data()
@@ -190,8 +191,6 @@ def mean_data():
             print(f'Mode: {mode_value}')
             input('Press ENTER to return to menu')
             mean_data()
-        elif data_t == '4':
-            pass
         else:
             print("Invalid selection. Please choose a number between 1 and 4.")
             mean_data()
@@ -214,8 +213,6 @@ def mean_data():
             print(f'Max: {max_value}')
             input('Press ENTER to return to menu')
             mean_data()
-        elif data_t == '4':
-            pass
         else:
             print("Invalid selection. Please choose a number between 1 and 4.")
             mean_data()
@@ -238,8 +235,6 @@ def mean_data():
             print(f'Min: {min_value}')
             input('Press ENTER to return to menu')
             mean_data()
-        elif data_t == '4':
-            pass
         else:
             print("Invalid selection. Please choose a number between 1 and 4.")
             mean_data()
@@ -262,13 +257,11 @@ def mean_data():
             print(f'Range: {range_value}')
             input('Press ENTER to return to menu')
             mean_data()
-        elif data_t == '4':
-            pass
         else:
             print("Invalid selection. Please choose a number between 1 and 4.")
             mean_data()
     elif optionm == '6':
-        mean_data()
+        pass
     else:
         print("Invalid selection. Please choose a number between 1 and 6.")
         mean_data()
