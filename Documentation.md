@@ -28,10 +28,9 @@ After launching the program, a text menu appears for the user to choose from
 Using the text menu User selects one of the following options: 
 a. View visualisation (e.g., chart or graph of selected data) 
 b. Search or filter data based on specific criteria 
-c. Veiw mean data 
-d. Update data 
-e. Compare Fields
-f. Quit
+c. Veiw data Statistics
+d. Compare Fields
+e. Quit
 
 The system carries out the selected action and displays the result to the user.
 
@@ -53,14 +52,19 @@ Data or information available on my topic is very limited, and if their is any o
 #### Data Dictionary
 | Field | Data Type | Format | Description | Example | Validtion |
 | - | - | - | - | - | - |
-| Extra Curriculars | str | XX...XX | Voluntary, non-academic pursuits undertaken by students outside of regular school curriculum | Scouts;Swimming;Other | Any string, excluding numbers |
-| Extra Curricular Hours / Week | int64 | N | Number of hours taking part in Extracurricular Activities | 0 | Single digit (0-9)
-| School Opinion | int64 | N | Opinion on school overall, excluding breaktime | 6 | Single digit (0-9)
-| Breaktime Opinion | int64 | N | Opinion on breaktime overall, including recess, lunch, before and after school, and free periods.  | 7 | Single digit (0-9)
+| Extra Curriculars | str (categorical) | XX...XX | Voluntary, non-academic pursuits undertaken by students outside of regular school curriculum | Scouts;Swimming;Other | Any string, excluding numbers, each string seperated by semicolons (;) |
+| Extra Curricular Hours / Week | int64 (hours per week) | N | Number of hours taking part in Extracurricular Activities | 0 | Single digit (0-9)
+| School Opinion | int64 (1-10 rating) | N | Opinion on school overall, excluding breaktime | 6 | Single digit (0-9)
+| Breaktime Opinion | int64 (1-10 rating) | N | Opinion on breaktime overall, including recess, lunch, before and after school, and free periods.  | 7 | Single digit (0-9)
 ## Phase 3 - Producing & Implementing
-- Be able to sort collums 
+### Missed Commitments:
 ## Phase 4 - Testing & Evaluating
 ### Test
 ### Analysis
 ### Peer Verification
 ### Evaluation
+
+# To Do
+- Annotate Code
+- Read Me
+- All of Testing and Evaluating

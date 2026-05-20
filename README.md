@@ -1,1 +1,7 @@
-Selecting Option 3 - Brings up graph, and exits out of everything else, closing graphy continues
+# UI Instructions
+### Veiw & Sort Data
+### Compare Fields
+### Visualise Data
+### Search/Filter Data
+### Veiw Data Statistics
+# Version Control - (Missed Comit Summaries)
