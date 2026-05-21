@@ -26,11 +26,11 @@ Main Flow:
 After launching the program, a text menu appears for the user to choose from
 
 Using the text menu User selects one of the following options: 
-a. View visualisation (e.g., chart or graph of selected data) 
-b. Search or filter data based on specific criteria 
-c. Veiw data Statistics
-d. Compare Fields
-e. Quit
+- View visualisation (e.g., chart or graph of selected data) 
+- Search or filter data based on specific criteria 
+- Veiw data Statistics
+- Compare Fields
+- Quit
 
 The system carries out the selected action and displays the result to the user.
 
@@ -43,12 +43,14 @@ Information remains available for additional searching or review
 ### Research
 Data or information available on my topic is very limited, and if their is any of it it's not easy processed down into usable data. This made it so I was required to make a survey, which although more work allowed me to pinpoint the specific information I need. 
 
-*Talk about survey*
+Due to the fact of my data only collectable through a survey, I created a survey to collect the sufficient 
+
+#### Survey: https://forms.gle/78fqpbPkFroJuN8u7
+
 ### Findings
 *Discuss the above information in at least one SEEL / SEEC Paragraph.*
 ### Data
 ### Planning
-#### Survey: https://forms.gle/78fqpbPkFroJuN8u7
 #### Data Dictionary
 | Field | Data Type | Format | Description | Example | Validtion |
 | - | - | - | - | - | - |
@@ -58,13 +60,18 @@ Data or information available on my topic is very limited, and if their is any o
 | Breaktime Opinion | int64 (1-10 rating) | N | Opinion on breaktime overall, including recess, lunch, before and after school, and free periods.  | 7 | Single digit (0-9)
 ## Phase 3 - Producing & Implementing
 ### Missed Commitments:
+Only 
 ## Phase 4 - Testing & Evaluating
 ### Test
 ### Analysis
 ### Peer Verification
+Max Edmunds's PMI
+| Plus | Minus | Implication |
+| - | - | - |
+| The program runs flawlessly and without error (with the exception of unnecessary spamming). UI looks really nice and options are clear and easy to understand. The code can be cycled through endlessly - you can't get stuck at any point. Data statistics all work and show exact measurements. The tables have good data and are in order. | There could be animations to add more flavour to the already good UI. There is no update data feature so data cannot be changed in any way. More data tables could be added for extra analysis and makes it more reliable and valid when in comparison to the hypothesis. README hasn't been done, however the data is easy enough to understand. | In the future, more data could be originally collected and visualised - there could be more choice in the tables and in comparing certain activities rather than set lists. More options can be added to enhance the data, and add-ons such as animations to go with the good-looking system. Overall it's not about what you included to break the code, but what you didn't include that would make it more effective. |
 ### Evaluation
 
 # To Do
-- Annotate Code
 - Read Me
 - All of Testing and Evaluating
+- Why I dont update data

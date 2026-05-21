@@ -24,6 +24,7 @@ def menu():
             break
         else:
             print("Invalid selection. Please choose a number between 1 and 6.")
+            time.sleep(2)
         clear_screen()
 
 if __name__ == "__main__":

@@ -56,6 +56,7 @@ def total_data():
 
     else:
         print("Invalid selection. Please choose a number between 1 and 2.") # Error output
+        time.sleep(2)
         total_data()
 
 def compare_data(csv_file): #csv_file is used to allow for the function to be used elsewhere
@@ -68,10 +69,12 @@ def compare_data(csv_file): #csv_file is used to allow for the function to be us
     print("═════════════════════════════════════════")
 
     for i,f in enumerate(fields,1): #enumerate is a new function to me, allowing for the number to be added to the start of the field
-        print(str(i)+"."+f)
+        print(str(i)+". "+f)
+    print('5. Return')
     choice=input('\nEnter number(s):\n')
     parts=[p.strip() for p in choice.split(",")]
-
+    if choice == '5':
+        return
     if not all(p.isdigit() for p in parts):
         print("Invalid input. Showing all data.")
         print(df)
@@ -164,6 +167,7 @@ def visualise_data():
 
     else:
         print("Invalid selection. Please choose a number between 1 and 5.")
+        time.sleep(2)
         visualise_data()
 
 def search_data():
@@ -186,6 +190,7 @@ def search_data():
             column_selected = 'What is your opinion of breaktime?'
         else:
             print("Invalid selection. Please choose a number between 1 and 4.")
+            time.sleep(2)
             search_data()
         
         sdf = sdf[sdf[column_selected].astype(str) == search] #.astype(str) is used to allow for 12 to equal '12', as shown in my .csv
@@ -198,6 +203,7 @@ def search_data():
         pass
     else:
         print("Invalid selection. Please choose a number between 1 and 4.")
+        time.sleep(2)
         search_data()
 
 
@@ -237,6 +243,7 @@ def mean_data():
             mean_data()
         else:
             print("Invalid selection. Please choose a number between 1 and 4.")
+            time.sleep(2)
             mean_data()
 
     elif optionm == '2': # Finds mode, which is the most common value
@@ -260,6 +267,7 @@ def mean_data():
             mean_data()
         else:
             print("Invalid selection. Please choose a number between 1 and 4.")
+            time.sleep(2)
             mean_data()
 
     elif optionm == '3': # Finds max, which is the highest value
@@ -283,6 +291,7 @@ def mean_data():
             mean_data()
         else:
             print("Invalid selection. Please choose a number between 1 and 4.")
+            time.sleep(2)
             mean_data()
 
     elif optionm == '4': # Finds min, which is the lowest value
@@ -306,6 +315,7 @@ def mean_data():
             mean_data()
         else:
             print("Invalid selection. Please choose a number between 1 and 4.")
+            time.sleep(2)
             mean_data()
 
     elif optionm == '5': # Finds range, which is the difference between the max and min values
@@ -329,6 +339,7 @@ def mean_data():
             mean_data()
         else:
             print("Invalid selection. Please choose a number between 1 and 4.")
+            time.sleep(2)
             mean_data()
 
     elif optionm == '6': # Return to menu
@@ -336,4 +347,5 @@ def mean_data():
 
     else:
         print("Invalid selection. Please choose a number between 1 and 6.")
+        time.sleep(2)
         mean_data()
