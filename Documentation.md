@@ -109,9 +109,14 @@ My analylasis works correctly, my algorythyms all provide accurate, useful resul
 ### Analysis
 Based on the numerical evidence and visualisations created by my survey dataset and anylasis system, my original hypothesis was not supported. The data shows no significant relationship between extracurricular hours and students’ enjoyment of school or breaktime. While extracurricular activities may still provide personal benefits, they do not influence overall school satisfaction found in this dataset. Further research with a larger sample size or additional wellbeing factors may reveal more complex relationships. interactions.
 ### Peer Verification
-Max Edmunds's PMI
+Max Edmunds' PMI
 | Plus | Minus | Implication |
 | - | - | - |
 | The program runs flawlessly and without error (with the exception of unnecessary spamming). UI looks really nice and options are clear and easy to understand. The code can be cycled through endlessly - you can't get stuck at any point. Data statistics all work and show exact measurements. The tables have good data and are in order. | There could be animations to add more flavour to the already good UI. There is no update data feature so data cannot be changed in any way. More data tables could be added for extra analysis and makes it more reliable and valid when in comparison to the hypothesis. README hasn't been done, however the data is easy enough to understand. | In the future, more data could be originally collected and visualised - there could be more choice in the tables and in comparing certain activities rather than set lists. More options can be added to enhance the data, and add-ons such as animations to go with the good-looking system. Overall it's not about what you included to break the code, but what you didn't include that would make it more effective. |
 ### Evaluation
-- I didnt use data update
+#### Evaluation Against Requirments Outline
+Overall my system and results adhered very succesfully to both my functional and non-functional requirments, meeting both categories individual demands. Functionally my system was able to read in a .csv file, and process it in multiple ways. I required my system to be able to use both PANDAS and MATPLOTLIB to be able to compare, visualise and calculate my vale, all of which were completed above what I set out to do. Non-functionally my system had to adhere to two main demans, usablity and reliability. For usability I created a README file to explain both my system and the point of the anylasis, the program itself also required an intuiative menu, which I blow out of the water with not just my main UI but my secondary and tertiarry ones. For Reliability the program was required to validate all user interfaces, prevent data corruption, and provide clear error messages when any process or input fails. Originally one of the functional requirments was a function to add and save new records into the system, but I left this out as the dataset is fixed and only used for analysis, not ongoing data entry.
+#### Evaluation Against PMI (Max Edmunds')
+#### Evaluation of Project Management
+#### Evaluation of Data and Security
+####
