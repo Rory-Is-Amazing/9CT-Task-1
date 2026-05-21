@@ -58,9 +58,9 @@ As I did not conduct research for my project, there was not much information col
 | Field | Data Type | Format | Description | Example | Validation |
 | - | - | - | - | - | - |
 | Extra Curriculars | str (categorical) | XX...XX | Voluntary, non-academic pursuits undertaken by students outside of regular school curriculum | Scouts;Swimming;Other | Any string, excluding numbers, each string separated by semicolons (;) |
-| Extra Curricular Hours / Week | int64 (hours per week) | NN | Number of hours taking part in Extracurricular Activities | 20 | 1-2 digit(s) (0-20)
-| School Opinion | int64 (1-10 rating) | N | Opinion on school overall, excluding breaktime | 6 | Single digit (0-9)
-| Breaktime Opinion | int64 (1-10 rating) | N | Opinion on breaktime overall, including recess, lunch, before and after school, and free periods.  | 7 | Single digit (0-9)
+| Extra Curricular Hours / Week | int64 (hours per week) | NN | Number of hours taking part in Extracurricular Activities | 20 | Integer between 0 and 20
+| School Opinion | int64 (1-10 rating) | N | Opinion on school overall, excluding breaktime | 6 | Integer between 1 and 10
+| Breaktime Opinion | int64 (1-10 rating) | N | Opinion on breaktime overall, including recess, lunch, before and after school, and free periods.  | 7 | Integer between 1 and 10
 ## Phase 3 - Producing & Implementing
 ### Python Libaries & Files
 Libraries
